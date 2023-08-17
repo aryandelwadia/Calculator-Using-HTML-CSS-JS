@@ -77,49 +77,6 @@ document.getElementById("00").addEventListener('click', ()=>{
     document.querySelector('input').value = string;
 })
 
-// document.onkeydown = e =>{
-//     if(e.key == "0" || e.key == "Num0"){
-//         string = string + '0';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "1" || e.key == "Num1"){
-//         string = string + '1';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "2" || e.key == "Num2"){
-//         string = string + '2';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "3" || e.key == "Num3"){
-//         string = string + '3';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "4" || e.key == "Num4"){
-//         string = string + '4';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "5" || e.key == "Num5"){
-//         string = string + '5';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "6" || e.key == "Num6"){
-//         string = string + '6';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "7" || e.key == "Num7"){
-//         string = string + '7';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "8" || e.key == "Num8"){
-//         string = string + '8';
-//         document.querySelector('input').value = string;
-//     }
-//     else if(e.key == "9" || e.key == "Num9"){
-//         string = string + '9';
-//         document.querySelector('input').value = string;
-//     }
-// }
-
 // ------------------------Operators--------------------------
 document.getElementById("+").addEventListener('click', ()=>{
     string = string + document.getElementById('+').innerHTML;
