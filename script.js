@@ -1,67 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
+let string = "";
+let btns = document.querySelectorAll(".buttons");
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-</head>
+// Array.from(btns).forEach((button) => {
+//     button.addEventListener('click', (e) => {
+//         if (e.target.innerHTML == "=") {
+//             string = eval(string);
+//             document.querySelector('input').value = string;
+//         }
+//         else if (e.target.innerHTML == "C") {
+//             string = "";
+//             document.querySelector('input').value = string;
+//         }
+//         else {
+//             console.log(e.target)
+//             string = string + e.target.innerHTML;
+//             document.querySelector('input').value = string;
+//         }
+//     })
+// })
 
-<body>
-    <div class="bg">
-        <header>
-            <div class="navbar">Calculator</div>
-        </header>
-        
-        <div class="calculator">
-            <input type="text" class="txtarea">
-            <div class="buttonlayout">
-                <table>
-                    <tr>
-                    <td><button class="buttons" id="7">7</button></td>
-                    <td><button class="buttons" id="8">8</button></td>
-                    <td><button class="buttons" id="9">9</button></td>
-                    <td><button class="buttons" id="C">C</button></td>
-                    </tr>
-                    <tr>
-                    <td><button class="buttons" id="4">4</button></td>
-                    <td><button class="buttons" id="5">5</button></td>
-                    <td><button class="buttons" id="6">6</button></td>
-                    <td><button class="buttons" id="DL"><i class="fa-solid fa-delete-left"></i></button></td>
-                </tr>
-                <tr>
-                    <td><button class="buttons" id="1">1</button></td>
-                    <td><button class="buttons" id="2">2</button></td>
-                    <td><button class="buttons" id="3">3</button></td>
-                    <td><button class="buttons" id="*">*</button></td>
-                </tr>
-                <tr>
-                    <td><button class="buttons" id="0">0</button></td>
-                    <td><button class="buttons" id="00">00</button></td>
-                    <td><button class="buttons" id=".">.</button></td>
-                    <td><button class="buttons" id="/">/</button></td>
-                </tr>
-                <tr>
-                    <td><button class="buttons" id="%">%</button></td>
-                    <td><button class="buttons" id="=">=</button></td>
-                    <td><button class="buttons" id="-">-</button></td>
-                    <td><button class="buttons" id="+">+</button></td>
-                </tr>
-                </table>
-            </div>
-        </div>
-        <footer>
-            <div class="navbar footbar">
-                This Calculator is made for basic arithmetic operations using  HTML CSS JS.
-            </div>
-        </footer>
-    </div>
-    <script src="script.js"></script>
-</body>
 
-</html>
+// -----------------------------2nd method-----------------------------------
+// -------------------------------buttons----------------------------
+document.getElementById("0").addEventListener('click', ()=>{
+    string = string + document.getElementById('0').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("1").addEventListener('click', ()=>{
+    string = string + document.getElementById('1').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("2").addEventListener('click', ()=>{
+    string = string + document.getElementById('2').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("3").addEventListener('click', ()=>{
+    string = string + document.getElementById('3').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("4").addEventListener('click', ()=>{
+    string = string + document.getElementById('4').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("5").addEventListener('click', ()=>{
+    string = string + document.getElementById('5').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("6").addEventListener('click', ()=>{
+    string = string + document.getElementById('6').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("7").addEventListener('click', ()=>{
+    string = string + document.getElementById('7').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("8").addEventListener('click', ()=>{
+    string = string + document.getElementById('8').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("9").addEventListener('click', ()=>{
+    string = string + document.getElementById('9').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("00").addEventListener('click', ()=>{
+    string = string + document.getElementById('00').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+// document.onkeydown = e =>{
+//     if(e.key == "0" || e.key == "Num0"){
+//         string = string + '0';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "1" || e.key == "Num1"){
+//         string = string + '1';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "2" || e.key == "Num2"){
+//         string = string + '2';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "3" || e.key == "Num3"){
+//         string = string + '3';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "4" || e.key == "Num4"){
+//         string = string + '4';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "5" || e.key == "Num5"){
+//         string = string + '5';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "6" || e.key == "Num6"){
+//         string = string + '6';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "7" || e.key == "Num7"){
+//         string = string + '7';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "8" || e.key == "Num8"){
+//         string = string + '8';
+//         document.querySelector('input').value = string;
+//     }
+//     else if(e.key == "9" || e.key == "Num9"){
+//         string = string + '9';
+//         document.querySelector('input').value = string;
+//     }
+// }
+
+// ------------------------Operators--------------------------
+document.getElementById("+").addEventListener('click', ()=>{
+    string = string + document.getElementById('+').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("-").addEventListener('click', ()=>{
+    string = string + document.getElementById('-').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("*").addEventListener('click', ()=>{
+    string = string + document.getElementById('*').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("/").addEventListener('click', ()=>{
+    string = string + document.getElementById('/').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById(".").addEventListener('click', ()=>{
+    string = string + document.getElementById('.').innerHTML;
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("=").addEventListener('click', ()=>{
+    string = eval(string);
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("C").addEventListener('click', ()=>{
+    string = "";
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("DL").addEventListener('click', ()=>{
+    string = string.slice(0,-1);
+    document.querySelector('input').value = string;
+})
+
+document.getElementById("%").addEventListener('click', ()=>{
+    string = string + "/" + "100";
+    string = eval(string);
+    document.querySelector('input').value = string;
+})
+
