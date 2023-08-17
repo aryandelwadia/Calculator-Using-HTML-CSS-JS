@@ -11,7 +11,7 @@
     background-image: url("https://source.unsplash.com/yZygONrUBe8");
     background-size: cover;
     width: 94.9rem;
-    height: 811px;
+    height: 812px;
 }
 
 /* -----------------header---------------------- */
@@ -32,6 +32,7 @@
 
 .txtarea{
     display: block;
+    padding-left: 1rem;
     margin: 2rem auto 1rem auto;
     width: 23.5rem;
     height: 3rem;
@@ -47,7 +48,9 @@
 }
 
 .buttons{
-    padding: 2rem;
+    /* padding: 2rem; */
+    height: 5rem;
+    width: 5rem;
     margin: 0.5rem;
     border-radius: 1rem;
     color: aliceblue;
@@ -59,4 +62,10 @@
 .footbar{
     margin-top: 2rem;
     font-size: 1rem;
+}
+
+#DL{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0;
 }
